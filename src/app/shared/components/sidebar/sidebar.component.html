@@ -1,0 +1,49 @@
+<h2>Paises</h2>
+
+<hr>
+<ul class="list-group">
+  <!-- <li
+  routerLink=''
+  [routerLinkActiveOptions]="{ exact: true}"
+  routerLinkActive="active"
+  class="list-group-item">
+    Home Page
+  </li>
+  <li
+  routerLink='about'
+  routerLinkActive="active"
+  class="list-group-item">
+    About Page
+  </li>
+  <li
+  routerLink='contact'
+  routerLinkActive="active"
+  class="list-group-item">
+    Contact Page
+  </li> -->
+  <li
+  routerLink='countries/by-capital'
+  routerLinkActive="active"
+  class="list-group-item">
+    Por Capital
+  </li>
+  <li
+  routerLink='countries/by-country'
+  routerLinkActive="active"
+  class="list-group-item">
+    Por Pais
+  </li>
+  <li
+  routerLink='countries/by-region'
+  routerLinkActive="active"
+  class="list-group-item">
+    Por Region
+  </li>
+</ul>
+
+
+<!--
+  *RouterLink: tienes que importar el app-routing al modulo , en este caso shared, y ahi puedes usar los botones para poder mostrar algo en el router outlet.
+  ?RouterLink: se usa para poner un estio especitifo al link que se encuentra activo al mostar el contenido del router
+  !si en el routerlink tenemos "" para que sea la web raiz , y no queremos que al precionar about , en este caso , se activen los dos botones , ya que al ser raiz tambien se cumple,  ponemos el "[routerLinkActiveOptions]="{ exact: true}"" para que se activen los stylos activos solo cuando este exactamente en la raiz
+ -->
