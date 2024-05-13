@@ -1,4 +1,9 @@
 <input
   type="text"
-  [placeholder]="placeholder"
-  class="form-control">
+  [placeholder]="placeholdertext"
+  #txtInput
+  (keyup.enter)="emitValue(txtInput.value)"
+  >
+<!--
+  *al soltar enter (keyup.enter), se lanza emitValue() , funcion a la que le enviamos el txtInput.value , dato que escribimos en el input  keyup.enter)
+-->

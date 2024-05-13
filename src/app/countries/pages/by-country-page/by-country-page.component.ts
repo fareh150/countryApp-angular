@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class ByCountryPageComponent {
 
+  public mostrarDato(term: string):void{
+    console.log('paginaCountry');
+
+    console.log({term});
+
+  }
+
 }
