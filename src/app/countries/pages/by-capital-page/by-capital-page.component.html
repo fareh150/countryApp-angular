@@ -13,6 +13,10 @@
   <div class="col">
     <hr>
     <!-- tabla -->
+     @if (isLoading)
+     {
+      <shared-loading-spinner></shared-loading-spinner>
+     }
     <countries-table [countries]="countries"></countries-table>
   </div>
 </div>
